@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+  tests:
+    container_name: fable-test-image
+    image: fable-test-image:latest
+    build:
+      context: ./test
+      dockerfile: ./Dockerfile

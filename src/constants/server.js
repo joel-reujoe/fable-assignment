@@ -9,10 +9,10 @@ require(`dotenv`).config();
 
 const {
 	NODE_ENV,
-	PORT,
+	NODE_PORT,
 } = process.env;
 
 module.exports = {
 	NODE_ENV: NODE_ENV || `development`,
-	PORT: PORT || 8000,
+	PORT: NODE_PORT || 8000,
 };
