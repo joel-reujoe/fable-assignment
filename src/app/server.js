@@ -39,12 +39,6 @@ const init = () => {
 	// app.use(logResponseBody);
 
 	app.use(`/public`, express.static(`public`));
-	app.get(`/clear`, async(req,res)=>{
-		const redisClient = 
-		global.redisClient;
-		await redisClient.del(req.query.key);
-		res.send(`Cleared`);
-	});
 	app.get(`/`, async(req, res) => {
 		res.status(200).send(`Server up`);
 	});

@@ -1,7 +1,3 @@
-/**
- * login.js
- * Vishal Kumar
- */
 
 "use strict";
 
